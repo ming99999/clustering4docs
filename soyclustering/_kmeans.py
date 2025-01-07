@@ -451,7 +451,7 @@ def _kmeans_single_banilla(X, sparsity, n_clusters, centers, max_iter,
                            radius, epsilon, minimum_df_factor):
 
     n_samples = X.shape[0]
-    labels_old = np.zeros((n_samples,), dtype=np.int)
+    labels_old = np.zeros((n_samples,), dtype=np.int64)
 
     for n_iter_ in range(1, max_iter + 1):
 
